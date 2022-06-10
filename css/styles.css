@@ -156,6 +156,21 @@ body {
 .header-contact-list-link:focus {
     color: var(--accent-color);
 }
+.current {
+    position: relative;
+}
+.current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
 
 /*===========HERO==========*/
 
